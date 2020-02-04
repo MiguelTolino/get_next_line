@@ -8,7 +8,8 @@ The aim of this project is to code a function that returns a line ending with a 
 
 - **Prototype:** int get_next_line(int fd, char **line)
 
-- **Parameters:**   1.  file descriptor for reading
+- **Parameters:** 
+                1.  file descriptor for reading
                 2.  The value of what has been read
                 
 - **Return value:**

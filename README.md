@@ -13,7 +13,9 @@ The aim of this project is to code a function that returns a line ending with a 
                 
 - **Return value:** 
                 1 : *A line has been read*
+                
                 0 : *EOF has been reached*
+                
                 -1 : *An error happened*
                 
 - **External Functions** : *read, malloc, free*

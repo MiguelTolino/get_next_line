@@ -19,4 +19,8 @@ The aim of this project is to code a function that returns a line ending with a 
                 
 - **External Functions** : *read, malloc, free*
 
+## Califications
+
+**115/100**
+
 ![Get next line](https://lh3.googleusercontent.com/proxy/R796zJzbW7vIwmBjqCI3PscT5H8wy-LsaBR-UPEcf8rBX0huxQlNpsYKjRxEA3WNqlB9UutLpJjB8e0rhN4UPyEFmSgwnIZ1EuT5yrd-1tTEkNHw-ZMuLTjJuwbF13JwyWQX751l)

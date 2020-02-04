@@ -11,12 +11,10 @@ The aim of this project is to code a function that returns a line ending with a 
 - **Parameters:**   1.  file descriptor for reading
                 2.  The value of what has been read
                 
-- **Return value:** 
-                1 : *A line has been read*
-                ___
-                0 : *EOF has been reached*
-                ___
-                -1 : *An error happened*
+- **Return value:**
+                1 : *A line has been read* |
+                0 : *EOF has been reached* |
+                -1 : *An error happened* 
                 
 - **External Functions** : *read, malloc, free*
 

@@ -6,7 +6,7 @@
 /*   By: mmateo-t <mmateo-t@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/02 13:46:30 by mmateo-t          #+#    #+#             */
-/*   Updated: 2021/11/08 17:43:43 by mmateo-t         ###   ########.fr       */
+/*   Updated: 2021/11/08 17:52:49 by mmateo-t         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,8 @@ int	get_next_line(int fd, char **line)
 
 	if (fd < 0 || !line || BUFFER_SIZE < 1)
 		return (-1);
-	while ((n_bytes = read(fd, buff, BUFFER_SIZE)) > 0)
+	n_bytes = read(fd, buff, BUFFER_SIZE);
+	while (n_bytes > 0)
 	{
 		buff[n_bytes] = '\0';
 		if (s[fd] == NULL)
@@ -72,6 +73,7 @@ int	get_next_line(int fd, char **line)
 		}
 		if (ft_strchr(s[fd], '\n'))
 			break ;
+		n_bytes = read(fd, buff, BUFFER_SIZE);
 	}
 	return (return_value(fd, n_bytes, s, line));
 }

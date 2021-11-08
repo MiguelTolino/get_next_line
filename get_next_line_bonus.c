@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line_bonus.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mmateo-t <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mmateo-t <mmateo-t@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/02 13:46:30 by mmateo-t          #+#    #+#             */
-/*   Updated: 2019/12/09 20:30:07 by mmateo-t         ###   ########.fr       */
+/*   Updated: 2021/11/08 17:43:43 by mmateo-t         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line_bonus.h"
 
-int			new_line(char **s, char **line)
+int	new_line(char **s, char **line)
 {
 	int		len;
 	char	*aux;
@@ -37,7 +37,7 @@ int			new_line(char **s, char **line)
 	return (1);
 }
 
-int			return_value(int fd, int n_bytes, char **s, char **line)
+int	return_value(int fd, int n_bytes, char **s, char **line)
 {
 	if (n_bytes < 0)
 		return (-1);
@@ -50,7 +50,7 @@ int			return_value(int fd, int n_bytes, char **s, char **line)
 		return (new_line(&s[fd], line));
 }
 
-int			get_next_line(int fd, char **line)
+int	get_next_line(int fd, char **line)
 {
 	char			buff[BUFFER_SIZE + 1];
 	int				n_bytes;
